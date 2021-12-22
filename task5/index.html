@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-Start. 5 задача</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header">
+                <div class="logo">
+                  <img src="img/logo.webp" alt="мой логотип">;
+                </div> 
+                <div class="title">
+                    Практическая работа 6.8<br>
+                    <span>Задача 5: "Перехват формы"</span><br>
+                </div>
+                <div class="back">
+                    <a href="../index.html">на главную страницу</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-section">
+            <div class="task">
+                <form action="#">
+                    <label>
+                        Текст
+                        <input id="Field" type="text" placeholder="Введите текст">
+                    </label>
+                    <button id="clear_Field" type="button">
+                        Вывести текст в консоль и удалить из формы
+                    </button>
+                </form>
+                <hr>
+                <p>Введенный текст:</p>
+                <p id="duplicateField"></p>
+            </div>
+        </section>
+        
+
+        <footer>
+          <div class="signature">
+              &copy;Мирошниченко А.А., группа PHPDEV 23
+          </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

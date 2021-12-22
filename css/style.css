@@ -1,0 +1,78 @@
+body {
+    margin: 0; /* сброс отступов для всех элементов*/
+    background: url(../img/background.jpg) fixed; /* фон страницы */
+    background-size: cover; /* масштабирует изображения фона с сохранением пропорций */
+    font-family:Arial, Helvetica, sans-serif; /* шрифт для всех элементов */
+}
+
+.header {
+    background-color: #0d0d0d; /* цвет фона */
+    opacity: 0.9; /* прозрачность фона */
+    height: 200px;
+    width: 1800px;
+    margin: 40px auto; /* центрирование по горизонтали */
+    border-radius: 15px; /* закругление углов */
+    box-shadow: 15px 15px 30px grey; /* тень блока*/
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bolder; /* толщина букв */
+    color: white;
+    text-align: center; /* центрирование текста */
+    padding: 20px 0 0 0;
+}
+.title span {
+    font-size: 50px;
+    color: rgb(190, 163, 7);
+}
+
+.logo {
+    position: absolute; /* позиция относительно родителя header*/
+    float: left; /* выравнивание по левому краю с обтеканием текста справа*/
+    margin: 30px 0 0 30px;
+}
+
+.main-section {
+    box-sizing: border-box; /* изменение алгоритма расчета ширины и высоты элемента - свойства Width и Height (и минимальные/максимальные свойства) включают содержимое, заполнение и границы */
+    margin: 0 auto; /* центрирование по горизонтали */
+    padding: 50px 0;
+    max-width: 100vw; /* максимальная ширина элемента - 100% видимой области */
+    display: flex; /* поведение отображения (тип поля визуализации) элемента - отображает элемент как контейнер Flex на уровне блоков*/
+    align-items: center; /* выравнивание для элементов внутри гибкого контейнера - элементы расположены в центре контейнера */
+    justify-content: space-around; /* выравнивание элементов гибкого контейнера, когда элементы не используют все доступное пространство на главной оси - элементы располагаются с пробелами до, между и после линий */
+    flex-wrap: wrap; /* гибкие элементы будут обернуты при необходимости */
+    height: 65vh;
+}
+
+.task {
+    background: linear-gradient(to right, #735f46, #504334);
+    height: 100px;
+    margin: 40px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 30px grey;
+}
+
+a { 
+    color: white;
+    line-height: 100px; 
+    text-align: center;
+    padding: 0 60px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.task:hover {
+    background: linear-gradient(to right,#403425, #201a13); /* смена фона кнопок при наведении указателя */
+}
+
+.signature {
+    position:fixed;
+    left:20px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif ;
+}
